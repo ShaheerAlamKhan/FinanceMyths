@@ -48,4 +48,4 @@ jobs:
         with:
           branch: gh-pages
           folder: docs
-          clean: true # Automatically remove deleted files
+          clean: true # Automatically remove deleted file

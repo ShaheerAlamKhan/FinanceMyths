@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 async function loadViz1Data() {
     try {
-        const data = await loadJsonData('js/data/viz1_data.json');
+        // CRITICAL FIX: Use absolute path for JSON data
+        const data = await loadJsonData('/FinancialMyths/js/data/viz1_data.json');
         if (data) {
             initWordCloud(data.wordCloud);
             initLiteracyChart(data.literacy);
@@ -269,4 +270,24 @@ function initLiteracyChart(literacyData) {
     insightContainer.className = 'alert alert-info mt-3';
     insightContainer.innerHTML = '<strong>Key Insight:</strong> Despite the increasing volume of financial advice, financial literacy has declined across generations, with Gen Z scoring 29.6% lower than Baby Boomers.';
     chartContainer.parentNode.appendChild(insightContainer);
+}
+
+/**
+ * Load JSON data from the given URL
+ * THIS FUNCTION WAS INCORRECTLY NESTED INSIDE initLiteracyChart
+ */
+async function loadJsonData(url) {
+    console.log('Loading data from:', url); // Add debugging
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Data loaded successfully:', data);
+        return data;
+    } catch (error) {
+        console.error(`Failed to load data from ${url}:`, error);
+        return null;
+    }
 }

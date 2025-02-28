@@ -10,16 +10,12 @@ This script:
 
 import os
 import json
-import shutil
 import pandas as pd
 import numpy as np
 from pathlib import Path
-import plotly.graph_objects as go
-import plotly.express as px
-import plotly.io as pio
+import sys
 
 # Add the project root to the Python path
-import sys
 sys.path.append(str(Path(__file__).parent.parent))
 
 # Import data processors
@@ -28,8 +24,10 @@ try:
         fetch_google_trends_data, 
         process_google_trends_data
     )
-except ImportError:
-    print("Warning: Google Trends processor not found. Using dummy data.")
+    print("Successfully imported Google Trends processor")
+except ImportError as e:
+    print(f"Warning: Failed to import Google Trends processor: {e}")
+    print(f"Using dummy functions instead")
     
     # Dummy data functions if imports fail
     def fetch_google_trends_data(search_terms, start_year, end_year):
@@ -105,7 +103,9 @@ def generate_visualization_1_data():
         "investing", "stocks", "bonds", "mutual funds", 
         "retirement", "401k", "ira", "financial advisor",
         "crypto", "bitcoin", "nft", "fintech",
-        "personal finance", "budget", "save money", "debt"
+        "personal finance", "budget", "save money", "debt",
+        "passive income", "side hustle", "FIRE movement", "financial freedom",
+        "stock market", "financial crisis", "stimulus check", "robinhood"
     ]
     
     # Fetch and process Google Trends data
@@ -116,8 +116,9 @@ def generate_visualization_1_data():
     processed_data_path = Path("data/processed/google_trends_processed.csv")
     ensure_dir(processed_data_path.parent)
     processed_data.to_csv(processed_data_path, index=False)
+    print(f"Saved processed Google Trends data to {processed_data_path}")
     
-    # Generate financial literacy data (dummy data)
+    # Generate financial literacy data (synthetic data)
     literacy_data = pd.DataFrame({
         "Generation": ["Baby Boomers", "Gen X", "Millennials", "Gen Z"],
         "FinancialLiteracyScore": [68.5, 62.3, 57.8, 48.2]
@@ -125,6 +126,7 @@ def generate_visualization_1_data():
     
     literacy_data_path = Path("data/processed/financial_literacy.csv")
     literacy_data.to_csv(literacy_data_path, index=False)
+    print(f"Saved financial literacy data to {literacy_data_path}")
     
     # Prepare data for static site (JSON format)
     # Word cloud data
@@ -135,21 +137,24 @@ def generate_visualization_1_data():
         year_data = processed_data[processed_data["year"] == year]
         
         # Select top terms by search volume
-        top_terms = year_data.nlargest(8, "search_volume")
+        top_terms = year_data.nlargest(10, "search_volume")
         
         word_cloud_data["data"][str(year)] = [
             {
                 "term": row["term"],
-                "size": int(row["normalized_volume"] * 40) + 10,  # Scale for visualization
+                "size": int(row["normalized_volume"] * 30) + 10,  # Scale for visualization
                 "x": float(row["x_position"]), 
                 "y": float(row["y_position"])
             }
             for _, row in top_terms.iterrows()
         ]
     
+    # Ensure the js/data directory exists
+    js_data_path = Path("docs/js/data")
+    ensure_dir(js_data_path)
+    
     # Save data as JSON for the static site
     json_path = Path("docs/js/data/viz1_data.json")
-    ensure_dir(json_path.parent)
     
     with open(json_path, 'w') as f:
         json.dump({
@@ -159,242 +164,182 @@ def generate_visualization_1_data():
     
     print(f"Visualization 1 data saved to {json_path}")
 
-def generate_visualization_2_data():
-    """Generate data for Visualization 2: Savings Reality"""
-    print("Generating placeholder for Visualization 2...")
+def create_empty_placeholder_files():
+    """Create empty placeholder files for the remaining visualizations"""
+    print("Creating placeholder files for other visualizations...")
     
-    # Create placeholder/dummy data for now
-    income_brackets = ["Bottom 20%", "Lower Middle 20%", "Middle 20%", "Upper Middle 20%", "Top 20%"]
+    # Ensure js/data directory exists
+    js_data_path = Path("docs/js/data")
+    ensure_dir(js_data_path)
     
-    expenses_data = []
-    for bracket in income_brackets:
-        # Different expense proportions based on income bracket
-        if bracket == "Bottom 20%":
-            housing = 40
-            food = 20
-            healthcare = 15
-            transportation = 15
-            other = 8
-            savings = 2
-        elif bracket == "Lower Middle 20%":
-            housing = 35
-            food = 15
-            healthcare = 12
-            transportation = 15
-            other = 15
-            savings = 8
-        elif bracket == "Middle 20%":
-            housing = 30
-            food = 15
-            healthcare = 10
-            transportation = 15
-            other = 15
-            savings = 15
-        elif bracket == "Upper Middle 20%":
-            housing = 25
-            food = 12
-            healthcare = 10
-            transportation = 10
-            other = 23
-            savings = 20
-        else:  # Top 20%
-            housing = 20
-            food = 10
-            healthcare = 5
-            transportation = 5
-            other = 25
-            savings = 35
+    # Create empty placeholder JSON files for other visualizations
+    placeholders = ["viz2_data.json", "viz3_data.json", "viz4_data.json"]
+    
+    for filename in placeholders:
+        file_path = js_data_path / filename
+        
+        # Create with empty data if it doesn't exist
+        if not file_path.exists():
+            with open(file_path, 'w') as f:
+                json.dump({"status": "placeholder", "message": "Data not yet implemented"}, f, indent=2)
+            print(f"Created placeholder {file_path}")
+
+def create_main_js():
+    """Create the main.js file if it doesn't exist"""
+    main_js_path = Path("docs/js/main.js")
+    
+    if not main_js_path.exists():
+        main_js_content = """
+/**
+ * Main JavaScript file for Financial Myths Debunked
+ * Handles common functionality across the site
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Highlight active section in the navigation
+    highlightNavigation();
+    
+    // Add smooth scrolling for navigation links
+    setupSmoothScrolling();
+});
+
+/**
+ * Highlight the current section in the navigation
+ */
+function highlightNavigation() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    // Function to determine which section is currently in view
+    function updateNavigation() {
+        let currentSectionId = '';
+        let minDistance = Number.MAX_VALUE;
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const distance = Math.abs(sectionTop - window.scrollY - 100);
             
-        expenses_data.append({
-            "income_bracket": bracket,
-            "housing": housing,
-            "food": food,
-            "healthcare": healthcare,
-            "transportation": transportation,
-            "other": other,
-            "savings": savings
-        })
+            if (distance < minDistance) {
+                minDistance = distance;
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+        
+        // Remove active class from all links
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // Add active class to the current section link
+        if (currentSectionId) {
+            const currentLink = document.querySelector(`.nav-link[href="#${currentSectionId}"]`);
+            if (currentLink) {
+                currentLink.classList.add('active');
+            }
+        }
+    }
     
-    # Save as JSON
-    json_path = Path("docs/js/data/viz2_data.json")
-    ensure_dir(json_path.parent)
+    // Update navigation on scroll
+    window.addEventListener('scroll', updateNavigation);
     
-    with open(json_path, 'w') as f:
-        json.dump(expenses_data, f, indent=2)
-    
-    print(f"Visualization 2 placeholder data saved to {json_path}")
+    // Initialize on page load
+    updateNavigation();
+}
 
-def generate_visualization_3_data():
-    """Generate data for Visualization 3: Investment Returns"""
-    print("Generating placeholder for Visualization 3...")
-    
-    # Create placeholder for Sankey diagram data
-    nodes = ["Bottom 20%", "Lower Middle 20%", "Middle 20%", "Upper Middle 20%", "Top 20%",
-             "Inheritance", "Stocks", "Real Estate", "Business Equity", "Other Investments",
-             "Bottom 20% End", "Lower Middle 20% End", "Middle 20% End", "Upper Middle 20% End", "Top 20% End"]
-    
-    # Source, target, value
-    links = [
-        # From starting wealth to investment types (Bottom 20%)
-        [0, 5, 5],  # Bottom 20% -> Inheritance
-        [0, 6, 10], # Bottom 20% -> Stocks
-        [0, 7, 3],  # Bottom 20% -> Real Estate
-        [0, 8, 1],  # Bottom 20% -> Business Equity
-        [0, 9, 2],  # Bottom 20% -> Other Investments
-        
-        # Lower Middle 20%
-        [1, 5, 10],
-        [1, 6, 25],
-        [1, 7, 12],
-        [1, 8, 5],
-        [1, 9, 8],
-        
-        # Middle 20%
-        [2, 5, 15],
-        [2, 6, 45],
-        [2, 7, 30],
-        [2, 8, 10],
-        [2, 9, 10],
-        
-        # Upper Middle 20%
-        [3, 5, 25],
-        [3, 6, 75],
-        [3, 7, 65],
-        [3, 8, 30],
-        [3, 9, 15],
-        
-        # Top 20%
-        [4, 5, 95],
-        [4, 6, 120],
-        [4, 7, 90],
-        [4, 8, 100],
-        [4, 9, 45],
-        
-        # From investment types to ending wealth
-        # Inheritance
-        [5, 10, 2],  # Inheritance -> Bottom 20% End
-        [5, 11, 3],  # Inheritance -> Lower Middle 20% End
-        [5, 12, 10], # Inheritance -> Middle 20% End
-        [5, 13, 30], # Inheritance -> Upper Middle 20% End
-        [5, 14, 105],# Inheritance -> Top 20% End
-        
-        # Stocks
-        [6, 10, 5],
-        [6, 11, 20],
-        [6, 12, 35],
-        [6, 13, 80],
-        [6, 14, 135],
-        
-        # Real Estate
-        [7, 10, 2],
-        [7, 11, 10],
-        [7, 12, 25],
-        [7, 13, 60],
-        [7, 14, 103],
-        
-        # Business Equity
-        [8, 10, 1],
-        [8, 11, 3],
-        [8, 12, 7],
-        [8, 13, 25],
-        [8, 14, 110],
-        
-        # Other Investments
-        [9, 10, 2],
-        [9, 11, 5],
-        [9, 12, 8],
-        [9, 13, 15],
-        [9, 14, 50]
-    ]
-    
-    # Save as JSON
-    json_path = Path("docs/js/data/viz3_data.json")
-    ensure_dir(json_path.parent)
-    
-    with open(json_path, 'w') as f:
-        json.dump({
-            "nodes": nodes,
-            "links": links
-        }, f, indent=2)
-    
-    print(f"Visualization 3 placeholder data saved to {json_path}")
+/**
+ * Set up smooth scrolling for navigation links
+ */
+function setupSmoothScrolling() {
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Get the target section id from the href
+            const targetId = this.getAttribute('href');
+            
+            // Only process if it's an internal link
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to the target element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Adjust for navbar height
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close the mobile navbar if open
+                    const navbarToggler = document.querySelector('.navbar-toggler');
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarToggler.click();
+                    }
+                }
+            }
+        });
+    });
+}
 
-def generate_visualization_4_data():
-    """Generate data for Visualization 4: Economic Growth"""
-    print("Generating placeholder for Visualization 4...")
-    
-    # Create placeholder data - GDP growth vs income growth by percentile
-    years = list(range(1980, 2023, 5))
-    
-    data = []
-    gdp_growth = 100
-    
-    for year in years:
-        gdp_growth *= (1 + np.random.normal(0.025, 0.01))  # ~2.5% average growth with variation
-        
-        # Income growth for different percentiles (higher for top, lower for bottom)
-        bottom_20_growth = 100 * (1 + 0.005) ** (year - 1980)  # 0.5% annual growth
-        lower_mid_growth = 100 * (1 + 0.01) ** (year - 1980)   # 1% annual growth
-        middle_growth = 100 * (1 + 0.015) ** (year - 1980)     # 1.5% annual growth
-        upper_mid_growth = 100 * (1 + 0.02) ** (year - 1980)   # 2% annual growth
-        top_20_growth = 100 * (1 + 0.035) ** (year - 1980)     # 3.5% annual growth
-        top_1_growth = 100 * (1 + 0.05) ** (year - 1980)       # 5% annual growth
-        
-        # Add some randomness
-        bottom_20_growth *= (1 + np.random.normal(0, 0.005))
-        lower_mid_growth *= (1 + np.random.normal(0, 0.005))
-        middle_growth *= (1 + np.random.normal(0, 0.005))
-        upper_mid_growth *= (1 + np.random.normal(0, 0.005))
-        top_20_growth *= (1 + np.random.normal(0, 0.01))
-        top_1_growth *= (1 + np.random.normal(0, 0.02))
-        
-        data.append({
-            "year": year,
-            "gdp_index": round(gdp_growth, 1),
-            "bottom_20_income_index": round(bottom_20_growth, 1),
-            "lower_mid_income_index": round(lower_mid_growth, 1),
-            "middle_income_index": round(middle_growth, 1),
-            "upper_mid_income_index": round(upper_mid_growth, 1),
-            "top_20_income_index": round(top_20_growth, 1),
-            "top_1_income_index": round(top_1_growth, 1)
-        })
-    
-    # Save as JSON
-    json_path = Path("docs/js/data/viz4_data.json")
-    ensure_dir(json_path.parent)
-    
-    with open(json_path, 'w') as f:
-        json.dump(data, f, indent=2)
-    
-    print(f"Visualization 4 placeholder data saved to {json_path}")
+/**
+ * Format numbers with commas for thousands
+ */
+function formatNumber(num) {
+    return num.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, ",");
+}
+"""
+        with open(main_js_path, 'w') as f:
+            f.write(main_js_content)
+        print(f"Created {main_js_path}")
 
-def copy_static_files():
-    """Copy static files to docs directory"""
-    print("Copying static files...")
+def create_empty_js_files():
+    """Create empty JS files for unimplemented visualizations"""
+    js_dir = Path("docs/js/visualizations")
+    ensure_dir(js_dir)
     
-    # Ensure docs directory exists
-    ensure_dir("docs")
+    # Only create placeholder files if they don't exist
+    placeholder_files = ["viz2.js", "viz3.js", "viz4.js"]
     
-    # Create subdirectories if they don't exist
-    for subdir in ["css", "js", "assets"]:
-        ensure_dir(f"docs/{subdir}")
+    for filename in placeholder_files:
+        file_path = js_dir / filename
+        
+        if not file_path.exists():
+            with open(file_path, 'w') as f:
+                f.write(f"""
+/**
+ * {filename} - Placeholder
+ * This visualization will be implemented by another team member
+ */
+
+document.addEventListener('DOMContentLoaded', function() {{
+    console.log("{filename} loaded - visualization not yet implemented");
     
-    # Copy directories
-    # This is a placeholder - in a real implementation, you would have
-    # more static files to copy
+    // Display placeholder message in the visualization container
+    const container = document.getElementById('{filename.split(".")[0]}-chart');
+    if (container) {{
+        container.innerHTML = '<div class="placeholder-message">This visualization is under development</div>';
+    }}
+}});
+""")
+            print(f"Created placeholder {file_path}")
 
 def main():
     """Main build script"""
     print("Building Financial Myths Debunked site...")
     
-    # Generate data for each visualization
-    generate_visualization_1_data()
-    generate_visualization_2_data()
-    generate_visualization_3_data()
-    generate_visualization_4_data()
+    # Create necessary directories
+    for directory in ["data/raw", "data/processed", "docs/js/data"]:
+        ensure_dir(directory)
     
-    # Copy static files
-    copy_static_files()
+    # Generate data for visualization 1
+    generate_visualization_1_data()
+    
+    # Create placeholder files for other visualizations
+    create_empty_placeholder_files()
+    
+    # Create main.js if it doesn't exist
+    create_main_js()
+    
+    # Create empty JS files for unimplemented visualizations
+    create_empty_js_files()
     
     print("Build complete!")
 

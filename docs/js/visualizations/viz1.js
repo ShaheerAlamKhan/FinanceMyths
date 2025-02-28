@@ -1,10 +1,12 @@
 /**
  * Visualization 1: The Landscape of Financial Advice
- * This file contains the code for the word cloud and bar chart
- * showing financial advice search trends and financial literacy.
+ * This file implements:
+ * 1. A temporal word cloud showing Google Trends for financial advice
+ * 2. Bar chart showing generational decline in financial literacy
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Visualization 1 loading...');
     // Load the visualization data
     loadViz1Data();
 });
@@ -14,9 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 async function loadViz1Data() {
     try {
-        // CRITICAL FIX: Use absolute path for JSON data
-        const data = await loadJsonData('/FinancialMyths/js/data/viz1_data.json');
+        // Use relative path for local testing, absolute path for production
+        const dataUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? './js/data/viz1_data.json'
+            : './js/data/viz1_data.json';
+            
+        console.log('Loading data from:', dataUrl);
+        const data = await loadJsonData(dataUrl);
+        
         if (data) {
+            console.log('Data loaded successfully');
             initWordCloud(data.wordCloud);
             initLiteracyChart(data.literacy);
         } else {
@@ -274,7 +283,6 @@ function initLiteracyChart(literacyData) {
 
 /**
  * Load JSON data from the given URL
- * THIS FUNCTION WAS INCORRECTLY NESTED INSIDE initLiteracyChart
  */
 async function loadJsonData(url) {
     console.log('Loading data from:', url); // Add debugging
@@ -284,7 +292,7 @@ async function loadJsonData(url) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log('Data loaded successfully:', data);
+        console.log('Data loaded successfully');
         return data;
     } catch (error) {
         console.error(`Failed to load data from ${url}:`, error);

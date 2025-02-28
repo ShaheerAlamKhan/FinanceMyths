@@ -1,0 +1,109 @@
+/* Custom styles for Financial Myths Debunked */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: #0d6efd;
+}
+
+/* Visualization container */
+.viz-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+/* Insights list */
+.insights-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.insights-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+}
+
+.insights-list li:before {
+    content: "→";
+    color: #0d6efd;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Year slider for word cloud */
+.year-slider-container {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.year-slider {
+    width: 100%;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .viz-container {
+        padding: 15px;
+        min-height: 300px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+}
+
+/* Navbar highlight current section */
+.navbar .nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Animation effects */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+    max-width: 300px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}

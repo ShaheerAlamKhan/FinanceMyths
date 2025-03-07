@@ -1,12 +1,10 @@
 /**
  * Visualization 1: The Landscape of Financial Advice
- * This file implements:
- * 1. A temporal word cloud showing Google Trends for financial advice
- * 2. Bar chart showing generational decline in financial literacy
+ * This file contains the code for the word cloud and bar chart
+ * showing financial advice search trends and financial literacy.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Visualization 1 loading...');
     // Load the visualization data
     loadViz1Data();
 });
@@ -16,14 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 async function loadViz1Data() {
     try {
-        // Use relative path for local testing, absolute path for production
-        const dataUrl = './js/data/viz1_data.json';
-            
-        console.log('Loading data from:', dataUrl);
-        const data = await loadJsonData(dataUrl);
-        
+        const data = await loadJsonData('data/viz1_data.json');
         if (data) {
-            console.log('Data loaded successfully');
             initWordCloud(data.wordCloud);
             initLiteracyChart(data.literacy);
         } else {
@@ -90,8 +82,8 @@ function initWordCloud(wordCloudData) {
             termElement.style.fontWeight = '700';
             
             // Convert x,y coordinates from -1,1 range to pixels
-            const left = (term.x + 0.5) * 80 + 10; // percentage of container width
-            const top = (term.y + 0.5) * 80 + 10;  // percentage of container height
+            const left = (term.x + 1) * 40 + 10; // percentage of container width
+            const top = (term.y + 1) * 40 + 10;  // percentage of container height
             
             termElement.style.left = `${left}%`;
             termElement.style.top = `${top}%`;
@@ -160,7 +152,7 @@ function initWordCloud(wordCloudData) {
             
             wordCloudData.years.forEach((year, index) => {
                 // Only show a subset of years to avoid crowding
-                if (index % 3 === 0 || index === wordCloudData.years.length - 1) {
+                if (index % 2 === 0 || index === wordCloudData.years.length - 1) {
                     const label = document.createElement('span');
                     label.textContent = year;
                     label.className = 'small text-muted';
@@ -187,7 +179,7 @@ function initWordCloud(wordCloudData) {
     
     // Initialize with the most recent year
     const mostRecentYear = wordCloudData.years[wordCloudData.years.length - 1];
-    createWordCloud(mostRecentYear);
+    createWordCloud(mostRecentYear.toString());
 }
 
 /**
@@ -277,23 +269,4 @@ function initLiteracyChart(literacyData) {
     insightContainer.className = 'alert alert-info mt-3';
     insightContainer.innerHTML = '<strong>Key Insight:</strong> Despite the increasing volume of financial advice, financial literacy has declined across generations, with Gen Z scoring 29.6% lower than Baby Boomers.';
     chartContainer.parentNode.appendChild(insightContainer);
-}
-
-/**
- * Load JSON data from the given URL
- */
-async function loadJsonData(url) {
-    console.log('Loading data from:', url);
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.log('Data loaded successfully');
-        return data;
-    } catch (error) {
-        console.error(`Failed to load data from ${url}:`, error);
-        return null;
-    }
 }

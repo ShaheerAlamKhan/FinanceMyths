@@ -1,0 +1,48 @@
+{
+  "wordCloud": {
+    "years": [2005, 2010, 2015, 2020, 2023],
+    "data": {
+      "2005": [
+        {"term": "investing", "size": 25, "x": 0.1, "y": 0.2},
+        {"term": "retirement", "size": 20, "x": -0.3, "y": 0.1},
+        {"term": "401k", "size": 18, "x": 0.5, "y": -0.2},
+        {"term": "stocks", "size": 22, "x": -0.2, "y": -0.4},
+        {"term": "mutual funds", "size": 19, "x": 0.4, "y": 0.3}
+      ],
+      "2010": [
+        {"term": "financial crisis", "size": 30, "x": 0.1, "y": 0.2},
+        {"term": "investing", "size": 22, "x": -0.3, "y": 0.1},
+        {"term": "recession", "size": 25, "x": 0.5, "y": -0.2},
+        {"term": "stocks", "size": 20, "x": -0.2, "y": -0.4},
+        {"term": "retirement", "size": 18, "x": 0.4, "y": 0.3}
+      ],
+      "2015": [
+        {"term": "investing", "size": 22, "x": 0.1, "y": 0.2},
+        {"term": "retirement", "size": 18, "x": -0.3, "y": 0.1},
+        {"term": "bitcoin", "size": 20, "x": 0.5, "y": -0.2},
+        {"term": "stocks", "size": 19, "x": -0.2, "y": -0.4},
+        {"term": "passive income", "size": 21, "x": 0.4, "y": 0.3}
+      ],
+      "2020": [
+        {"term": "crypto", "size": 28, "x": 0.1, "y": 0.2},
+        {"term": "stimulus check", "size": 30, "x": -0.3, "y": 0.1},
+        {"term": "bitcoin", "size": 26, "x": 0.5, "y": -0.2},
+        {"term": "robinhood", "size": 25, "x": -0.2, "y": -0.4},
+        {"term": "investing", "size": 20, "x": 0.4, "y": 0.3}
+      ],
+      "2023": [
+        {"term": "crypto", "size": 25, "x": 0.1, "y": 0.2},
+        {"term": "AI investing", "size": 30, "x": -0.3, "y": 0.1},
+        {"term": "passive income", "size": 28, "x": 0.5, "y": -0.2},
+        {"term": "side hustle", "size": 29, "x": -0.2, "y": -0.4},
+        {"term": "FIRE movement", "size": 24, "x": 0.4, "y": 0.3}
+      ]
+    }
+  },
+  "literacy": [
+    {"Generation": "Baby Boomers", "FinancialLiteracyScore": 68.5},
+    {"Generation": "Gen X", "FinancialLiteracyScore": 62.3},
+    {"Generation": "Millennials", "FinancialLiteracyScore": 57.8},
+    {"Generation": "Gen Z", "FinancialLiteracyScore": 48.2}
+  ]
+}

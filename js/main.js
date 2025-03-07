@@ -4,13 +4,14 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Financial Myths application loaded');
-    
     // Highlight active section in the navigation
     highlightNavigation();
     
     // Add smooth scrolling for navigation links
     setupSmoothScrolling();
+    
+    // Add fade-in animations to sections
+    setupAnimations();
 });
 
 /**
@@ -80,13 +81,51 @@ function setupSmoothScrolling() {
                     // Close the mobile navbar if open
                     const navbarToggler = document.querySelector('.navbar-toggler');
                     const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    if (navbarCollapse.classList.contains('show')) {
                         navbarToggler.click();
                     }
                 }
             }
         });
     });
+}
+
+/**
+ * Set up fade-in animations for sections as they enter the viewport
+ */
+function setupAnimations() {
+    // Add the fade-in class to elements that should animate
+    const animatedElements = document.querySelectorAll('.viz-container, .card');
+    
+    animatedElements.forEach(element => {
+        element.classList.add('fade-in');
+        element.style.opacity = '0'; // Start with opacity 0
+    });
+    
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+            rect.bottom >= 0
+        );
+    }
+    
+    // Function to handle animation on scroll
+    function handleScroll() {
+        animatedElements.forEach(element => {
+            if (isInViewport(element) && element.style.opacity === '0') {
+                element.style.opacity = '1';
+                element.style.animation = 'fadeIn ease 1s forwards';
+            }
+        });
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check elements on initial page load
+    setTimeout(handleScroll, 100);
 }
 
 /**

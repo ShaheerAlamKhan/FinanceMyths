@@ -107,3 +107,7 @@ section h2 {
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
 }
+
+.js-plotly-plot .modebar {
+    display: none !important;
+}

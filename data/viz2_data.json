@@ -1,1 +1,1215 @@
-{"status": "placeholder", "message": "Data not yet implemented"}
+{
+  "years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "categories": [
+    "0-20%",
+    "20-40%",
+    "40-60%",
+    "60-80%",
+    "80-100%"
+  ],
+  "seriesTypes": [
+    "Disposable Personal Income",
+    "Personal Consumption Expenditures",
+    "Personal Saving"
+  ],
+  "yearlyData": {
+    "2004": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 495.8751,
+          "20-40%": 927.1878,
+          "40-60%": 1336.083,
+          "60-80%": 1921.6281,
+          "80-100%": 4287.1227
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 881.0544,
+          "20-40%": 1205.7408,
+          "40-60%": 1529.5968,
+          "60-80%": 1884.1776,
+          "80-100%": 2803.4304
+        },
+        "Personal Saving": {
+          "0-20%": -410.7078,
+          "20-40%": -316.4526,
+          "40-60%": -250.89120000000003,
+          "60-80%": -43.84440000000001,
+          "80-100%": 1363.9302
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 177.6766770503298,
+          "Household Consumption Ratio": 53.46093773463972,
+          "Nondurable Goods Ratio": 26.543813698063854,
+          "Durable Goods Ratio": 19.951165467222676,
+          "Nonprofit Consumption Ratio": 3.8336704292383823
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 130.04278097705773,
+          "Household Consumption Ratio": 65.57833675435563,
+          "Nondurable Goods Ratio": 29.02773086493786,
+          "Durable Goods Ratio": 21.179990456606404,
+          "Nonprofit Consumption Ratio": 3.961434862278995
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 114.48366605966844,
+          "Household Consumption Ratio": 64.46826221044395,
+          "Nondurable Goods Ratio": 25.149804047187594,
+          "Durable Goods Ratio": 15.828517663108343,
+          "Nonprofit Consumption Ratio": 2.228653968796977
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 98.05110572644104,
+          "Household Consumption Ratio": 63.61764472209467,
+          "Nondurable Goods Ratio": 26.520407878703672,
+          "Durable Goods Ratio": 21.918089050235448,
+          "Nonprofit Consumption Ratio": 2.4439406565811446
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 65.39188626441693,
+          "Household Consumption Ratio": 51.324994415722884,
+          "Nondurable Goods Ratio": 34.88976867207114,
+          "Durable Goods Ratio": 21.409457327810276,
+          "Nonprofit Consumption Ratio": 3.7001729995466075
+        }
+      }
+    },
+    "2005": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 515.2368000000001,
+          "20-40%": 966.069,
+          "40-60%": 1388.8992,
+          "60-80%": 1990.9422,
+          "80-100%": 4470.986000000001
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 913.2375,
+          "20-40%": 1238.0625,
+          "40-60%": 1573.5375000000001,
+          "60-80%": 2101.6000000000004,
+          "80-100%": 3050.3375
+        },
+        "Personal Saving": {
+          "0-20%": -421.98879999999997,
+          "20-40%": -311.6804,
+          "40-60%": -246.5158,
+          "60-80%": -210.59670000000003,
+          "80-100%": 1287.7914
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 177.2461710809476,
+          "Household Consumption Ratio": 65.18242263355856,
+          "Nondurable Goods Ratio": 26.234527760665237,
+          "Durable Goods Ratio": 20.10990906159767,
+          "Nonprofit Consumption Ratio": 3.731788498551105
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 128.15466597106416,
+          "Household Consumption Ratio": 67.90125309721087,
+          "Nondurable Goods Ratio": 33.701949523908425,
+          "Durable Goods Ratio": 17.484608992829052,
+          "Nonprofit Consumption Ratio": 2.1547571960634917
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 113.29385890639148,
+          "Household Consumption Ratio": 59.58984125368018,
+          "Nondurable Goods Ratio": 26.972332990419677,
+          "Durable Goods Ratio": 23.62111654603425,
+          "Nonprofit Consumption Ratio": 3.8673405836248924
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 105.5580619065687,
+          "Household Consumption Ratio": 62.81244037964566,
+          "Nondurable Goods Ratio": 32.264825853270445,
+          "Durable Goods Ratio": 18.134177992688002,
+          "Nonprofit Consumption Ratio": 2.3437013287409894
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.22516330849615,
+          "Household Consumption Ratio": 57.557674835979526,
+          "Nondurable Goods Ratio": 32.21194516337806,
+          "Durable Goods Ratio": 24.597469283122635,
+          "Nonprofit Consumption Ratio": 3.0803004715820546
+        }
+      }
+    },
+    "2006": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 576.8100000000001,
+          "20-40%": 1037.2635,
+          "40-60%": 1457.9370000000001,
+          "60-80%": 2090.4390000000003,
+          "80-100%": 4782.5505
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 991.7692000000001,
+          "20-40%": 1335.795,
+          "40-60%": 1677.0086000000001,
+          "60-80%": 2131.6476,
+          "80-100%": 3237.7796
+        },
+        "Personal Saving": {
+          "0-20%": -443.581,
+          "20-40%": -341.717,
+          "40-60%": -284.75,
+          "60-80%": -139.876,
+          "80-100%": 1379.924
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 171.9403616442156,
+          "Household Consumption Ratio": 63.97910317572334,
+          "Nondurable Goods Ratio": 31.965332741574553,
+          "Durable Goods Ratio": 17.301503419157044,
+          "Nonprofit Consumption Ratio": 3.6618516486945367
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 128.78068109019551,
+          "Household Consumption Ratio": 66.1314625343769,
+          "Nondurable Goods Ratio": 28.893831458962005,
+          "Durable Goods Ratio": 18.640659211166046,
+          "Nonprofit Consumption Ratio": 3.951927157450716
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 115.02613624594204,
+          "Household Consumption Ratio": 60.45181926116878,
+          "Nondurable Goods Ratio": 27.40736925289494,
+          "Durable Goods Ratio": 19.66298025170883,
+          "Nonprofit Consumption Ratio": 2.3915334472324266
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 101.97128928421253,
+          "Household Consumption Ratio": 54.742714775530345,
+          "Nondurable Goods Ratio": 34.92404231372397,
+          "Durable Goods Ratio": 17.151825124265365,
+          "Nonprofit Consumption Ratio": 3.014609798111492
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 67.69985178410558,
+          "Household Consumption Ratio": 69.26394727560135,
+          "Nondurable Goods Ratio": 34.58982980214884,
+          "Durable Goods Ratio": 21.760035926257114,
+          "Nonprofit Consumption Ratio": 3.8356845654986
+        }
+      }
+    },
+    "2007": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 604.476,
+          "20-40%": 1093.068,
+          "40-60%": 1554.516,
+          "60-80%": 2221.632,
+          "80-100%": 4966.308
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1029.8400000000001,
+          "20-40%": 1389.7936,
+          "40-60%": 1745.824,
+          "60-80%": 2221.5119999999997,
+          "80-100%": 3419.0688
+        },
+        "Personal Saving": {
+          "0-20%": -456.9438,
+          "20-40%": -344.6481,
+          "40-60%": -263.7546,
+          "60-80%": -103.5596,
+          "80-100%": 1367.9061
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 170.36904691005103,
+          "Household Consumption Ratio": 67.52381251558062,
+          "Nondurable Goods Ratio": 29.60833562412139,
+          "Durable Goods Ratio": 24.011796647964406,
+          "Nonprofit Consumption Ratio": 2.5581549241170145
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 127.14612448630827,
+          "Household Consumption Ratio": 55.61911660858957,
+          "Nondurable Goods Ratio": 34.762840199509945,
+          "Durable Goods Ratio": 22.61287300725153,
+          "Nonprofit Consumption Ratio": 3.0992590133547497
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 112.30659575070312,
+          "Household Consumption Ratio": 64.63386959029869,
+          "Nondurable Goods Ratio": 33.468727512341054,
+          "Durable Goods Ratio": 22.15492065227138,
+          "Nonprofit Consumption Ratio": 3.0394033639697584
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 99.99459856537895,
+          "Household Consumption Ratio": 62.18039360914296,
+          "Nondurable Goods Ratio": 26.691021917907943,
+          "Durable Goods Ratio": 16.905736462858616,
+          "Nonprofit Consumption Ratio": 2.988772876253171
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.8452830553401,
+          "Household Consumption Ratio": 50.91777663983646,
+          "Nondurable Goods Ratio": 28.377216762838025,
+          "Durable Goods Ratio": 22.72721705643001,
+          "Nonprofit Consumption Ratio": 2.136577094971929
+        }
+      }
+    },
+    "2008": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 634.3358000000001,
+          "20-40%": 1136.5638,
+          "40-60%": 1625.6902,
+          "60-80%": 2309.157,
+          "80-100%": 5212.253199999999
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1090.2471,
+          "20-40%": 1429.3676,
+          "40-60%": 1808.9801000000002,
+          "60-80%": 2227.0600000000004,
+          "80-100%": 3566.3329
+        },
+        "Personal Saving": {
+          "0-20%": -491.47339999999997,
+          "20-40%": -342.47180000000003,
+          "40-60%": -256.26480000000004,
+          "60-80%": -19.7098,
+          "80-100%": 1483.845
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 171.87223234129303,
+          "Household Consumption Ratio": 51.45787216406468,
+          "Nondurable Goods Ratio": 28.668457216542095,
+          "Durable Goods Ratio": 23.564351626928836,
+          "Nonprofit Consumption Ratio": 2.036959769032041
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 125.76219654365204,
+          "Household Consumption Ratio": 60.0309702917018,
+          "Nondurable Goods Ratio": 30.11124470202651,
+          "Durable Goods Ratio": 18.764243995199948,
+          "Nonprofit Consumption Ratio": 2.2458343942703154
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 111.27458970965071,
+          "Household Consumption Ratio": 51.55791841072434,
+          "Nondurable Goods Ratio": 28.987701222602254,
+          "Durable Goods Ratio": 24.3135952984672,
+          "Nonprofit Consumption Ratio": 2.7115840825427817
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 96.4447198696321,
+          "Household Consumption Ratio": 51.67801202666983,
+          "Nondurable Goods Ratio": 30.96916833547434,
+          "Durable Goods Ratio": 15.847293196415908,
+          "Nonprofit Consumption Ratio": 2.5920716537392368
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.42209622510282,
+          "Household Consumption Ratio": 62.34618288062052,
+          "Nondurable Goods Ratio": 29.481908708039608,
+          "Durable Goods Ratio": 23.391529709467573,
+          "Nonprofit Consumption Ratio": 3.115837156604921
+        }
+      }
+    },
+    "2009": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 637.3192,
+          "20-40%": 1165.5084000000002,
+          "40-60%": 1617.3066000000001,
+          "60-80%": 2335.3820000000005,
+          "80-100%": 5156.3925
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1058.4291,
+          "20-40%": 1417.8768,
+          "40-60%": 1754.4234000000001,
+          "60-80%": 2179.5873,
+          "80-100%": 3546.6834
+        },
+        "Personal Saving": {
+          "0-20%": -454.5450000000001,
+          "20-40%": -302.697,
+          "40-60%": -204.01800000000003,
+          "60-80%": 60.883500000000005,
+          "80-100%": 1455.3765
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 166.07519434531395,
+          "Household Consumption Ratio": 59.54890256422934,
+          "Nondurable Goods Ratio": 26.531546537914195,
+          "Durable Goods Ratio": 16.905907811724077,
+          "Nonprofit Consumption Ratio": 3.443096690690048
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 121.65307431503709,
+          "Household Consumption Ratio": 67.21717527780952,
+          "Nondurable Goods Ratio": 32.06759241479476,
+          "Durable Goods Ratio": 22.32926263710106,
+          "Nonprofit Consumption Ratio": 3.192769429667235
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 108.47809561897539,
+          "Household Consumption Ratio": 65.27609954720404,
+          "Nondurable Goods Ratio": 25.225669819364548,
+          "Durable Goods Ratio": 24.40993838031918,
+          "Nonprofit Consumption Ratio": 3.9437677975542282
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 93.32894147509914,
+          "Household Consumption Ratio": 69.90764088432063,
+          "Nondurable Goods Ratio": 29.437635485562392,
+          "Durable Goods Ratio": 24.670034974554248,
+          "Nonprofit Consumption Ratio": 3.4023257123120603
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.78226201748606,
+          "Household Consumption Ratio": 69.5698764073383,
+          "Nondurable Goods Ratio": 27.547860005496315,
+          "Durable Goods Ratio": 17.116013697973578,
+          "Nonprofit Consumption Ratio": 3.8861815749828477
+        }
+      }
+    },
+    "2010": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 666.6891,
+          "20-40%": 1221.3201,
+          "40-60%": 1706.9052000000001,
+          "60-80%": 2403.0237,
+          "80-100%": 5321.061900000001
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1089.612,
+          "20-40%": 1453.842,
+          "40-60%": 1800.63,
+          "60-80%": 2239.758,
+          "80-100%": 3676.1580000000004
+        },
+        "Personal Saving": {
+          "0-20%": -453.3276000000001,
+          "20-40%": -276.6533,
+          "40-60%": -160.0335,
+          "60-80%": 72.40090000000001,
+          "80-100%": 1488.6135
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 163.4363003684926,
+          "Household Consumption Ratio": 63.677836553018096,
+          "Nondurable Goods Ratio": 26.927085820277828,
+          "Durable Goods Ratio": 22.61620674906323,
+          "Nonprofit Consumption Ratio": 2.3983134055176105
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 119.03857146050412,
+          "Household Consumption Ratio": 50.077375959222806,
+          "Nondurable Goods Ratio": 30.1817349763807,
+          "Durable Goods Ratio": 21.865759922236702,
+          "Nonprofit Consumption Ratio": 2.7237920031524423
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 105.49092005812626,
+          "Household Consumption Ratio": 58.475709066289234,
+          "Nondurable Goods Ratio": 29.051476706485886,
+          "Durable Goods Ratio": 23.009069577237458,
+          "Nonprofit Consumption Ratio": 2.769271971223959
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 93.20582231461137,
+          "Household Consumption Ratio": 69.43586495368531,
+          "Nondurable Goods Ratio": 31.005544911128627,
+          "Durable Goods Ratio": 21.209392754176186,
+          "Nonprofit Consumption Ratio": 2.4467610060124345
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 69.08692417203416,
+          "Household Consumption Ratio": 59.17091683575981,
+          "Nondurable Goods Ratio": 29.5533114911382,
+          "Durable Goods Ratio": 15.525553521100061,
+          "Nonprofit Consumption Ratio": 3.652587754554093
+        }
+      }
+    },
+    "2011": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 682.9056,
+          "20-40%": 1241.3231999999998,
+          "40-60%": 1745.2032000000002,
+          "60-80%": 2492.1312,
+          "80-100%": 5693.251200000001
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1099.8572,
+          "20-40%": 1479.6717,
+          "40-60%": 1846.6473999999998,
+          "60-80%": 2273.5375000000004,
+          "80-100%": 4000.3561
+        },
+        "Personal Saving": {
+          "0-20%": -444.26000000000005,
+          "20-40%": -282.5416,
+          "40-60%": -164.20159999999998,
+          "60-80%": 131.9976,
+          "80-100%": 1535.0056000000002
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 161.05552509746585,
+          "Household Consumption Ratio": 58.15900049954596,
+          "Nondurable Goods Ratio": 28.138017586081524,
+          "Durable Goods Ratio": 15.252506880990905,
+          "Nonprofit Consumption Ratio": 3.0950754656510093
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 119.20116372593377,
+          "Household Consumption Ratio": 55.77317006467217,
+          "Nondurable Goods Ratio": 34.70693444142309,
+          "Durable Goods Ratio": 17.588201377056013,
+          "Nonprofit Consumption Ratio": 2.6620633123869304
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 105.81274432684971,
+          "Household Consumption Ratio": 50.95597055809297,
+          "Nondurable Goods Ratio": 32.798199755770156,
+          "Durable Goods Ratio": 15.073960360921934,
+          "Nonprofit Consumption Ratio": 3.7238316120858403
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 91.22864398150469,
+          "Household Consumption Ratio": 65.75802596311935,
+          "Nondurable Goods Ratio": 25.908045818142142,
+          "Durable Goods Ratio": 21.150910810186296,
+          "Nonprofit Consumption Ratio": 2.409614698215722
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 70.26487958233776,
+          "Household Consumption Ratio": 57.67612917503,
+          "Nondurable Goods Ratio": 34.090280863775085,
+          "Durable Goods Ratio": 16.308513131911386,
+          "Nonprofit Consumption Ratio": 2.2168156022921948
+        }
+      }
+    },
+    "2012": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 708.4968,
+          "20-40%": 1282.9872,
+          "40-60%": 1804.1232,
+          "60-80%": 2585.8272,
+          "80-100%": 6027.8064
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1136.7363,
+          "20-40%": 1541.0565000000001,
+          "40-60%": 1932.1203,
+          "60-80%": 2435.8635,
+          "80-100%": 4000.1187
+        },
+        "Personal Saving": {
+          "0-20%": -459.58080000000007,
+          "20-40%": -305.0194,
+          "40-60%": -193.5437,
+          "60-80%": 56.9591,
+          "80-100%": 1878.2825000000003
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 160.44339226373359,
+          "Household Consumption Ratio": 64.35014657329573,
+          "Nondurable Goods Ratio": 33.74961745876849,
+          "Durable Goods Ratio": 19.493425026209053,
+          "Nonprofit Consumption Ratio": 2.5685242019007317
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 120.1147213315924,
+          "Household Consumption Ratio": 63.34509562698676,
+          "Nondurable Goods Ratio": 25.870228909222668,
+          "Durable Goods Ratio": 15.705799278257292,
+          "Nonprofit Consumption Ratio": 2.391402287185949
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 107.09469841084022,
+          "Household Consumption Ratio": 50.93847679799118,
+          "Nondurable Goods Ratio": 26.160843201989874,
+          "Durable Goods Ratio": 21.278956926220488,
+          "Nonprofit Consumption Ratio": 2.1898802286143724
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 94.2005521482642,
+          "Household Consumption Ratio": 69.49657739672314,
+          "Nondurable Goods Ratio": 32.844947037266856,
+          "Durable Goods Ratio": 21.521640341159735,
+          "Nonprofit Consumption Ratio": 2.3211070724405127
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 66.3611011130019,
+          "Household Consumption Ratio": 58.03520579994154,
+          "Nondurable Goods Ratio": 28.34715515446489,
+          "Durable Goods Ratio": 21.26738298231527,
+          "Nonprofit Consumption Ratio": 3.965461465913669
+        }
+      }
+    },
+    "2013": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 713.7216000000001,
+          "20-40%": 1306.0113999999999,
+          "40-60%": 1853.6936,
+          "60-80%": 2619.4574000000002,
+          "80-100%": 5899.3551
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1178.658,
+          "20-40%": 1606.8468,
+          "40-60%": 2050.9788,
+          "60-80%": 2575.9656,
+          "80-100%": 3975.5508
+        },
+        "Personal Saving": {
+          "0-20%": -494.15520000000004,
+          "20-40%": -346.13040000000007,
+          "40-60%": -265.0032,
+          "60-80%": -47.49360000000001,
+          "80-100%": 1768.7824
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 165.14254297473968,
+          "Household Consumption Ratio": 55.96941755110916,
+          "Nondurable Goods Ratio": 26.951356042620443,
+          "Durable Goods Ratio": 21.385587957755245,
+          "Nonprofit Consumption Ratio": 3.415305762098294
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 123.03466876322827,
+          "Household Consumption Ratio": 58.29271429802043,
+          "Nondurable Goods Ratio": 30.15360193400941,
+          "Durable Goods Ratio": 24.411303135112355,
+          "Nonprofit Consumption Ratio": 2.2875737821637023
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 110.6428160511532,
+          "Household Consumption Ratio": 68.01451468648504,
+          "Nondurable Goods Ratio": 32.98834016309001,
+          "Durable Goods Ratio": 17.979288430727067,
+          "Nonprofit Consumption Ratio": 2.300873648412664
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 98.33966377922388,
+          "Household Consumption Ratio": 53.320546501662456,
+          "Nondurable Goods Ratio": 33.41280649496462,
+          "Durable Goods Ratio": 24.977998020816507,
+          "Nonprofit Consumption Ratio": 2.7107425249610797
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 67.3895829732304,
+          "Household Consumption Ratio": 66.62786084879734,
+          "Nondurable Goods Ratio": 27.96465301385892,
+          "Durable Goods Ratio": 16.889770113583793,
+          "Nonprofit Consumption Ratio": 3.2851937617927853
+        }
+      }
+    },
+    "2014": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 731.7873999999999,
+          "20-40%": 1363.4902,
+          "40-60%": 1909.4062000000001,
+          "60-80%": 2742.5780000000004,
+          "80-100%": 6252.0380000000005
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1233.7086,
+          "20-40%": 1651.6734000000001,
+          "40-60%": 2039.9532000000002,
+          "60-80%": 2653.839,
+          "80-100%": 4294.8258000000005
+        },
+        "Personal Saving": {
+          "0-20%": -534.356,
+          "20-40%": -338.3424,
+          "40-60%": -199.36,
+          "60-80%": -7.9743999999999975,
+          "80-100%": 1792.0328
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 168.58839056261422,
+          "Household Consumption Ratio": 60.67583527059921,
+          "Nondurable Goods Ratio": 32.59998549932298,
+          "Durable Goods Ratio": 19.735086478957932,
+          "Nonprofit Consumption Ratio": 2.4136303211768615
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 121.13570013191148,
+          "Household Consumption Ratio": 56.866756304748634,
+          "Nondurable Goods Ratio": 34.41497284446415,
+          "Durable Goods Ratio": 19.91090169911948,
+          "Nonprofit Consumption Ratio": 2.940770195571001
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 106.83704703587952,
+          "Household Consumption Ratio": 55.97487702097973,
+          "Nondurable Goods Ratio": 32.21670809331486,
+          "Durable Goods Ratio": 17.235580050964668,
+          "Nonprofit Consumption Ratio": 2.2275804460227366
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 96.76439466808236,
+          "Household Consumption Ratio": 66.28754292541618,
+          "Nondurable Goods Ratio": 25.694689058585702,
+          "Durable Goods Ratio": 15.165194233307535,
+          "Nonprofit Consumption Ratio": 2.8043303373843784
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.69481279544367,
+          "Household Consumption Ratio": 50.78376529611076,
+          "Nondurable Goods Ratio": 33.02029615100375,
+          "Durable Goods Ratio": 23.95095952564698,
+          "Nonprofit Consumption Ratio": 3.936328594409703
+        }
+      }
+    },
+    "2015": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 790.3272,
+          "20-40%": 1430.4381,
+          "40-60%": 2002.884,
+          "60-80%": 2859.5229000000004,
+          "80-100%": 6449.8278
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1281.3474,
+          "20-40%": 1748.6334000000002,
+          "40-60%": 2177.7987000000003,
+          "60-80%": 2725.0152,
+          "80-100%": 4366.664699999999
+        },
+        "Personal Saving": {
+          "0-20%": -527.2806,
+          "20-40%": -370.3462,
+          "40-60%": -250.1142,
+          "60-80%": 28.555100000000007,
+          "80-100%": 1910.1859000000002
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 162.1287233945637,
+          "Household Consumption Ratio": 51.7776946872276,
+          "Nondurable Goods Ratio": 25.02603792109066,
+          "Durable Goods Ratio": 24.37260329108826,
+          "Nonprofit Consumption Ratio": 2.1101102316449323
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 122.24460464245186,
+          "Household Consumption Ratio": 61.4700671204798,
+          "Nondurable Goods Ratio": 29.787200379607278,
+          "Durable Goods Ratio": 21.165069745669804,
+          "Nonprofit Consumption Ratio": 3.801959176981745
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 108.7331418095107,
+          "Household Consumption Ratio": 67.53871988681017,
+          "Nondurable Goods Ratio": 25.665250939632188,
+          "Durable Goods Ratio": 19.1487743280692,
+          "Nonprofit Consumption Ratio": 3.6607318841078245
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 95.29614887854191,
+          "Household Consumption Ratio": 55.673344005425385,
+          "Nondurable Goods Ratio": 29.628763959329525,
+          "Durable Goods Ratio": 18.664646820003025,
+          "Nonprofit Consumption Ratio": 2.748060592422589
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 67.70203539387516,
+          "Household Consumption Ratio": 50.52147279468706,
+          "Nondurable Goods Ratio": 26.39470933612855,
+          "Durable Goods Ratio": 15.152930920539559,
+          "Nonprofit Consumption Ratio": 2.130966964505223
+        }
+      }
+    },
+    "2016": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 820.4181000000001,
+          "20-40%": 1477.8669,
+          "40-60%": 2053.1346,
+          "60-80%": 2919.5184,
+          "80-100%": 6659.4549
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1327.4261000000001,
+          "20-40%": 1789.4162000000001,
+          "40-60%": 2213.2253,
+          "60-80%": 2812.6670000000004,
+          "80-100%": 4582.9927
+        },
+        "Personal Saving": {
+          "0-20%": -547.6386,
+          "20-40%": -364.64480000000003,
+          "40-60%": -237.67560000000003,
+          "60-80%": -3.431600000000003,
+          "80-100%": 1899.4652
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 161.79873408448694,
+          "Household Consumption Ratio": 65.27661336200457,
+          "Nondurable Goods Ratio": 25.56834134818847,
+          "Durable Goods Ratio": 18.15232402786644,
+          "Nonprofit Consumption Ratio": 3.6948877893395364
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 121.08101209926281,
+          "Household Consumption Ratio": 56.60041334610022,
+          "Nondurable Goods Ratio": 32.283952270360466,
+          "Durable Goods Ratio": 23.339479920347813,
+          "Nonprofit Consumption Ratio": 3.1237404082366202
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 107.79737967496142,
+          "Household Consumption Ratio": 66.42456653241088,
+          "Nondurable Goods Ratio": 31.832917723943233,
+          "Durable Goods Ratio": 16.907673017416126,
+          "Nonprofit Consumption Ratio": 2.331741787849772
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 96.34010184693477,
+          "Household Consumption Ratio": 53.7836556089329,
+          "Nondurable Goods Ratio": 27.64031811526577,
+          "Durable Goods Ratio": 16.979346843032523,
+          "Nonprofit Consumption Ratio": 2.083520528865897
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.81933684992745,
+          "Household Consumption Ratio": 65.11045060690223,
+          "Nondurable Goods Ratio": 32.528211650473295,
+          "Durable Goods Ratio": 15.673698102993445,
+          "Nonprofit Consumption Ratio": 2.3853690654797957
+        }
+      }
+    },
+    "2017": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 854.919,
+          "20-40%": 1531.5472,
+          "40-60%": 2152.6422000000002,
+          "60-80%": 3058.7102000000004,
+          "80-100%": 7016.1814
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1383.5931,
+          "20-40%": 1872.7019,
+          "40-60%": 2392.38,
+          "60-80%": 2922.6909,
+          "80-100%": 4716.9759
+        },
+        "Personal Saving": {
+          "0-20%": -578.4540000000001,
+          "20-40%": -402.476,
+          "40-60%": -326.696,
+          "60-80%": 28.712200000000003,
+          "80-100%": 2120.9138000000003
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 161.83908650995008,
+          "Household Consumption Ratio": 68.93911993880438,
+          "Nondurable Goods Ratio": 26.34194016588906,
+          "Durable Goods Ratio": 18.44176379154319,
+          "Nonprofit Consumption Ratio": 2.5415317226223277
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 122.27516722958327,
+          "Household Consumption Ratio": 67.94378425746115,
+          "Nondurable Goods Ratio": 29.69778687464637,
+          "Durable Goods Ratio": 21.01448289588294,
+          "Nonprofit Consumption Ratio": 2.5775404755508955
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 111.13690886483596,
+          "Household Consumption Ratio": 53.74645268489908,
+          "Nondurable Goods Ratio": 33.5302046300525,
+          "Durable Goods Ratio": 24.070136967853628,
+          "Nonprofit Consumption Ratio": 3.2218689250629247
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 95.55305043282621,
+          "Household Consumption Ratio": 51.838118627933746,
+          "Nondurable Goods Ratio": 25.219250711792014,
+          "Durable Goods Ratio": 15.636424129639687,
+          "Nonprofit Consumption Ratio": 3.798450493087204
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 67.2299593052141,
+          "Household Consumption Ratio": 63.87935710980933,
+          "Nondurable Goods Ratio": 25.025592905709146,
+          "Durable Goods Ratio": 17.036772652315623,
+          "Nonprofit Consumption Ratio": 3.501007539185742
+        }
+      }
+    },
+    "2018": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 887.0596,
+          "20-40%": 1627.3062,
+          "40-60%": 2282.5558,
+          "60-80%": 3225.2498,
+          "80-100%": 7430.2832
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1453.3162000000002,
+          "20-40%": 1985.5950000000003,
+          "40-60%": 2480.252,
+          "60-80%": 3076.6272,
+          "80-100%": 4939.603
+        },
+        "Personal Saving": {
+          "0-20%": -615.8469,
+          "20-40%": -428.01210000000003,
+          "40-60%": -298.5018,
+          "60-80%": 19.840300000000006,
+          "80-100%": 2319.4208
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 163.8352372264502,
+          "Household Consumption Ratio": 66.1185218064998,
+          "Nondurable Goods Ratio": 27.276638585212627,
+          "Durable Goods Ratio": 15.092365041304983,
+          "Nonprofit Consumption Ratio": 3.7277639392518767
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 122.01729459397379,
+          "Household Consumption Ratio": 68.68306200401562,
+          "Nondurable Goods Ratio": 32.260563821436094,
+          "Durable Goods Ratio": 21.88170398520375,
+          "Nonprofit Consumption Ratio": 2.255771328620589
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 108.66117708929612,
+          "Household Consumption Ratio": 68.24400147201261,
+          "Nondurable Goods Ratio": 33.730191408785956,
+          "Durable Goods Ratio": 22.429835323943447,
+          "Nonprofit Consumption Ratio": 3.6110622764112543
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 95.39190421777562,
+          "Household Consumption Ratio": 68.04990821632622,
+          "Nondurable Goods Ratio": 32.9013501754556,
+          "Durable Goods Ratio": 23.461769073389547,
+          "Nonprofit Consumption Ratio": 2.773908851918539
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 66.47933688449453,
+          "Household Consumption Ratio": 67.01150521646922,
+          "Nondurable Goods Ratio": 33.802935878300985,
+          "Durable Goods Ratio": 22.755005849546762,
+          "Nonprofit Consumption Ratio": 2.535998887485854
+        }
+      }
+    },
+    "2019": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 937.1060000000001,
+          "20-40%": 1706.1792,
+          "40-60%": 2413.8558000000003,
+          "60-80%": 3405.8956000000003,
+          "80-100%": 7693.963400000001
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1545.6096000000002,
+          "20-40%": 2077.6338,
+          "40-60%": 2518.8246,
+          "60-80%": 3140.2404,
+          "80-100%": 5137.133400000001
+        },
+        "Personal Saving": {
+          "0-20%": -655.7646,
+          "20-40%": -441.3846,
+          "40-60%": -201.99360000000001,
+          "60-80%": 134.9403,
+          "80-100%": 2355.2025000000003
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 164.93434040546106,
+          "Household Consumption Ratio": 58.13384474987268,
+          "Nondurable Goods Ratio": 34.00916249656335,
+          "Durable Goods Ratio": 17.696608021521968,
+          "Nonprofit Consumption Ratio": 3.856789129407316
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 121.77113634956984,
+          "Household Consumption Ratio": 59.01013309478694,
+          "Nondurable Goods Ratio": 29.053617389984105,
+          "Durable Goods Ratio": 17.02905184298555,
+          "Nonprofit Consumption Ratio": 3.3360840878985893
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 104.348594476936,
+          "Household Consumption Ratio": 53.17388005024734,
+          "Nondurable Goods Ratio": 34.8939063366904,
+          "Durable Goods Ratio": 23.33705581006155,
+          "Nonprofit Consumption Ratio": 3.824124110412166
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 92.20013672762019,
+          "Household Consumption Ratio": 50.27002029522037,
+          "Nondurable Goods Ratio": 25.923397096044667,
+          "Durable Goods Ratio": 18.79481296426389,
+          "Nonprofit Consumption Ratio": 2.26230698790078
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 66.76836284404473,
+          "Household Consumption Ratio": 55.53056328429017,
+          "Nondurable Goods Ratio": 26.49513816511942,
+          "Durable Goods Ratio": 24.24163994909827,
+          "Nonprofit Consumption Ratio": 2.8906658984489946
+        }
+      }
+    },
+    "2020": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 1051.0665,
+          "20-40%": 1902.3435,
+          "40-60%": 2635.4840999999997,
+          "60-80%": 3660.4911,
+          "80-100%": 8121.8775000000005
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1579.7072,
+          "20-40%": 2105.3292,
+          "40-60%": 2542.874,
+          "60-80%": 3152.3114,
+          "80-100%": 4825.778200000001
+        },
+        "Personal Saving": {
+          "0-20%": -576.2529,
+          "20-40%": -271.9185,
+          "40-60%": 7.233300000000007,
+          "60-80%": 384.9723,
+          "80-100%": 3134.4300000000003
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 150.29564732583523,
+          "Household Consumption Ratio": 63.530006548997974,
+          "Nondurable Goods Ratio": 34.18486969682881,
+          "Durable Goods Ratio": 20.678582349245666,
+          "Nonprofit Consumption Ratio": 3.283361224658301
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 110.67029692587064,
+          "Household Consumption Ratio": 53.39659984963551,
+          "Nondurable Goods Ratio": 29.359756633184894,
+          "Durable Goods Ratio": 16.924217817268097,
+          "Nonprofit Consumption Ratio": 2.339432207142143
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 96.48603078273172,
+          "Household Consumption Ratio": 61.38117552849059,
+          "Nondurable Goods Ratio": 31.97390046613311,
+          "Durable Goods Ratio": 20.85232137379714,
+          "Nonprofit Consumption Ratio": 3.910573519316973
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 86.11717154564315,
+          "Household Consumption Ratio": 55.12074090535595,
+          "Nondurable Goods Ratio": 31.59708065430644,
+          "Durable Goods Ratio": 21.453871291103823,
+          "Nonprofit Consumption Ratio": 2.5895843280044986
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 59.41702765154978,
+          "Household Consumption Ratio": 52.63476478384801,
+          "Nondurable Goods Ratio": 25.5891221410787,
+          "Durable Goods Ratio": 20.383178615191483,
+          "Nonprofit Consumption Ratio": 2.7496045146661015
+        }
+      }
+    },
+    "2021": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 1144.1032,
+          "20-40%": 2067.9712,
+          "40-60%": 2876.1224,
+          "60-80%": 3910.108,
+          "80-100%": 8667.5616
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1755.1042,
+          "20-40%": 2382.3855000000003,
+          "40-60%": 2915.0131,
+          "60-80%": 3595.2363,
+          "80-100%": 5395.2609
+        },
+        "Personal Saving": {
+          "0-20%": -655.3890000000001,
+          "20-40%": -382.6284,
+          "40-60%": -131.28990000000002,
+          "60-80%": 194.2836,
+          "80-100%": 3096.2358
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 153.404360725501,
+          "Household Consumption Ratio": 60.10225887084918,
+          "Nondurable Goods Ratio": 33.658782009630855,
+          "Durable Goods Ratio": 21.56957640580105,
+          "Nonprofit Consumption Ratio": 3.336318494078089
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 115.2039980053881,
+          "Household Consumption Ratio": 63.455996124877885,
+          "Nondurable Goods Ratio": 26.918921447001253,
+          "Durable Goods Ratio": 23.95244395151247,
+          "Nonprofit Consumption Ratio": 3.1203092549834377
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 101.35219210420252,
+          "Household Consumption Ratio": 60.80192051872338,
+          "Nondurable Goods Ratio": 25.00095319429297,
+          "Durable Goods Ratio": 17.81174314067419,
+          "Nonprofit Consumption Ratio": 3.706635824006308
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 91.94723777450649,
+          "Household Consumption Ratio": 60.890868471649775,
+          "Nondurable Goods Ratio": 29.73078792338664,
+          "Durable Goods Ratio": 23.157943222580506,
+          "Nonprofit Consumption Ratio": 2.777436484797383
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 62.24658270672111,
+          "Household Consumption Ratio": 59.05867299888963,
+          "Nondurable Goods Ratio": 34.97846768259946,
+          "Durable Goods Ratio": 19.282070614731467,
+          "Nonprofit Consumption Ratio": 3.6084361381321886
+        }
+      }
+    },
+    "2022": {
+      "income": {
+        "Disposable Personal Income": {
+          "0-20%": 1077.2352,
+          "20-40%": 2001.114,
+          "40-60%": 2792.2086,
+          "60-80%": 3860.0928000000004,
+          "80-100%": 8971.349400000001
+        },
+        "Personal Consumption Expenditures": {
+          "0-20%": 1866.7792,
+          "20-40%": 2514.7232000000004,
+          "40-60%": 3075.1072000000004,
+          "60-80%": 3873.6544000000004,
+          "80-100%": 6178.2336
+        },
+        "Personal Saving": {
+          "0-20%": -844.165,
+          "20-40%": -590.604,
+          "40-60%": -387.5683,
+          "60-80%": -147.1526,
+          "80-100%": 2592.4899
+        }
+      },
+      "ratios": {
+        "0-20%": {
+          "Total Consumption Ratio": 173.29355743295426,
+          "Household Consumption Ratio": 58.814683227817255,
+          "Nondurable Goods Ratio": 34.04799306731561,
+          "Durable Goods Ratio": 19.662365642446094,
+          "Nonprofit Consumption Ratio": 3.1720297649368696
+        },
+        "20-40%": {
+          "Total Consumption Ratio": 125.6661639466817,
+          "Household Consumption Ratio": 53.873661920245176,
+          "Nondurable Goods Ratio": 34.11465629655061,
+          "Durable Goods Ratio": 17.249890518270828,
+          "Nonprofit Consumption Ratio": 2.5620917151403817
+        },
+        "40-60%": {
+          "Total Consumption Ratio": 110.13171437119706,
+          "Household Consumption Ratio": 55.66538657485705,
+          "Nondurable Goods Ratio": 31.026303115964918,
+          "Durable Goods Ratio": 17.99627688088408,
+          "Nonprofit Consumption Ratio": 3.3708194505075846
+        },
+        "60-80%": {
+          "Total Consumption Ratio": 100.35132834112174,
+          "Household Consumption Ratio": 54.71421491596585,
+          "Nondurable Goods Ratio": 34.466354608750066,
+          "Durable Goods Ratio": 24.746953458243027,
+          "Nonprofit Consumption Ratio": 2.741388638127077
+        },
+        "80-100%": {
+          "Total Consumption Ratio": 68.86626888035372,
+          "Household Consumption Ratio": 50.436496009043914,
+          "Nondurable Goods Ratio": 27.265080928213255,
+          "Durable Goods Ratio": 22.56735220997195,
+          "Nonprofit Consumption Ratio": 3.962121242398113
+        }
+      }
+    }
+  }
+}

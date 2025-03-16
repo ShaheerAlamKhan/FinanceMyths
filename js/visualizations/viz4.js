@@ -58,7 +58,20 @@ function createChoroplethMap(data) {
       text: values.map((val, idx) => `${countryNames[idx]}: ${val.toFixed(2)}%`),
       colorscale: [[0, 'rgb(247,251,255)'], [0.25, 'rgb(222,235,247)'], [0.5, 'rgb(158,202,225)'], [0.75, 'rgb(49,130,189)'], [1, 'rgb(8,81,156)']], // Blue-toned colorscale
       reversescale: true,
-      colorbar: { title: 'Redistribution Effectiveness (%)' }
+    //   colorbar: { title: 'Redistribution Effectiveness (%)' }
+    colorbar: { 
+        title: 'Redistribution Effectiveness (%)',
+        thickness: 18,       
+        len: 0.65,            
+        y: 0.5,              
+        titleside: 'right', 
+        titlefont: {
+            size: 10        
+        },
+        tickfont: {
+            size: 8          
+        }
+    }
   };
   
   const layout = {
@@ -67,7 +80,16 @@ function createChoroplethMap(data) {
           projection: { type: 'robinson' },
           showcoastlines: false, 
           showframe: false
-      }
+      },
+        width: 1000,  
+        height: 550,  
+        margin: {
+            l: 0,
+            r: 0,
+            b: 0,
+            t: 50,
+            pad: 4
+    }
   };
   
   Plotly.newPlot(chartContainer, [trace], layout);

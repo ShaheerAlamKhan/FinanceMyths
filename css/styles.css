@@ -198,3 +198,10 @@ section h2 {
   .temp-tooltip {
     transition: opacity 0.2s;
   }
+
+  .alert-info {
+    background-color: #f8f9fa; /* Light Grey */
+    color: #343a40; /* Darker grey text for contrast */
+    border-color: #ffffff; Slightly darker grey border
+}
+
